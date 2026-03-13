@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind Care Clinic | Dr. Laiba Khursheed Lone</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; background-color: #f9f9f9; color: #333; }
+        
+        /* Header Hero with Cover Image */
+        .header-hero { 
+            position: relative; height: 350px; 
+            background: url('clinic-cover.png') center/cover no-repeat;
+            display: flex; align-items: center; justify-content: center; color: white;
+        }
+        
+        /* Container for content */
+        .container { max-width: 800px; margin: -50px auto 20px auto; background: white; padding: 25px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        
+        /* Doctor Profile */
+        .doctor-profile { text-align: center; margin-bottom: 30px; }
+        .doctor-img { width: 140px; height: 140px; border-radius: 50%; border: 4px solid #00796b; object-fit: cover; }
+
+        /* Services Accordion Styling */
+        .service-box { border: 1px solid #00796b; margin-bottom: 12px; border-radius: 10px; overflow: hidden; }
+        .service-header { background: #00796b; color: white; padding: 18px; cursor: pointer; display: flex; justify-content: space-between; font-weight: bold; transition: 0.3s; }
+        .service-header:hover { background: #004d40; }
+        .service-content { padding: 20px; display: none; background: #e0f2f1; line-height: 1.6; }
+        
+        /* Buttons and Footer */
+        .btn { display: block; background: #00796b; color: white; text-align: center; padding: 18px; border-radius: 50px; text-decoration: none; margin-top: 30px; font-weight: bold; font-size: 1.1em; }
+        footer { text-align: center; padding: 40px; color: #555; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+
+    <div class="header-hero { 
+            position: relative; 
+            height: 200px; background: url('clinic-cover.jpg') center/contain no-repeat;
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            color: white; 
+        }"
+}></div>
+
+    <div class="container{ 
+            max-width: 800px; 
+            margin: 10px auto 20px auto;background: white; 
+            padding: 20px; 
+            border-radius: 20px; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
+        }
+">
+        <div class="doctor-profile">
+            <img src="dr-laiba.png" alt="Dr. Laiba" class="doctor-img .doctor-img { 
+    width: 140px; 
+    height: 140px; 
+    border-radius: 50%; 
+    border: 4px solid #00796b; 
+    object-fit: cover;}
+" onerror="this.src='https://via.placeholder.com/150';">
+            <h2>Khush Amdeed</h2>
+            <p><strong>Dr. Laiba Khursheed Lone</strong><br>Mind Care Clinic mein aapka istaqbal hai. Hum aapki zehni sehat ko behtar banane ke liye yahan hain.</p>
+        </div>
+
+        <section>
+            <h2 style="text-align: center; color: #00796b;">Hamari Khidmat (Click karein)</h2>
+            
+            <div class="service-box">
+                <div class="service-header" onclick="toggle(1)">Depression (Mayoosi ka ilaj) <span>▼</span></div>
+                <div id="1" class="service-content">Zehni dabao aur mayoosi se nikalne ke liye scientific therapy aur counseling.</div>
+            </div>
+
+            <div class="service-box">
+                <div class="service-header" onclick="toggle(2)">Anxiety (Ghabrahat aur Bechaini) <span>▼</span></div>
+                <div id="2" class="service-content">Panic attacks aur har waqt ki bechaini ko control karne ke liye makhsoos techniques.</div>
+            </div>
+
+            <div class="service-box">
+                <div class="service-header" onclick="toggle(3)">Stress Management <span>▼</span></div>
+                <div id="3" class="service-content">Rozmarra ki zindagi ki tension ko kam karne aur pur-sukoon rehne ki mashware.</div>
+            </div>
+
+            <div class="service-box">
+                <div class="service-header" onclick="toggle(4)">Insomnia (Neend ke masail) <span>▼</span></div>
+                <div id="4" class="service-content">Neend ki kami ya neend na aane ke masail ka asardar aur sukoon-bakhsh ilaj.</div>
+            </div>
+
+            <div class="service-box">
+                <div class="service-header" onclick="toggle(5)">Relationship Counseling <span>▼</span></div>
+                <div id="5" class="service-content">Rishton mein paida hone wali khaleej aur jazbati uljhano ko hal karne mein madad.</div>
+            </div>
+
+            <div class="service-box">
+                <div class="service-header" onclick="toggle(6)">Child & Adolescent Psychiatry <span>▼</span></div>
+                <div id="6" class="service-content">Bachon aur naujawano ke zehni rawayye aur school/ghar ke masail ki behter dekhbhal.</div>
+            </div>
+            
+            <a href="https://wa.me/923239963799" class="btn">WhatsApp per Appointment Lein</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>Aapki tawajjo aur aitmad ka bahut shukriya</p>
+        <p>Mind Care Clinic Hum aapki behtari ke liye hamesha hazir hain</p>
+    </footer>
+
+    <script>
+        function toggle(id) {
+            var x = document.getElementById(id);
+            x.style.display = (x.style.display === "block") ? "none" : "block";
+        }
+    </script>
+</body>
+</html>
